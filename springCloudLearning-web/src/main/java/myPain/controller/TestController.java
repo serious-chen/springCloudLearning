@@ -2,6 +2,8 @@ package myPain.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -18,9 +20,14 @@ public class TestController {
     @Autowired
     private RestTemplate restTemplate;
 
+    @Autowired
+    private LoadBalancerClient loadBalancerClient;
+
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     @ResponseBody
     public String hello(){
+        /*ServiceInstance serviceInstance = loadBalancerClient.choose("user");
+        log.info(serviceInstance.getHost());*/
         ResponseEntity<String> result = restTemplate.getForEntity("http://user/hello", String.class);
         log.info(result.getBody());
         return result.getBody();
