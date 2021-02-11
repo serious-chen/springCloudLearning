@@ -15,8 +15,8 @@
     <packaging>pom</packaging>
 
     <properties>
-        <spring.version>1.4.4.RELEASE</spring.version>
-        <spring-cloud.version>Brixton.SR6</spring-cloud.version>
+        <spring.version>2.1.10.RELEASE</spring.version>
+        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
     </properties>
 
     <dependencyManagement>

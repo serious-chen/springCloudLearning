@@ -6,8 +6,10 @@ spring:
     name: user
 
 eureka:
+  instance:
+    preferIpAddress: true
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://192.168.2.109:8081/eureka
+      defaultZone: http://192.168.2.109:8081/eureka, http://192.168.2.112:8081/eureka

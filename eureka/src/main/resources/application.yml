@@ -6,10 +6,6 @@ spring:
   application:
     name: cloud-eureka-server
 
-user:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
-
 # Eureka配置
 eureka:
   instance:
