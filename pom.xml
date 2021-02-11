@@ -15,8 +15,8 @@
     <packaging>pom</packaging>
 
     <properties>
-        <spring.version>2.3.4.RELEASE</spring.version>
-        <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
+        <spring.version>1.4.4.RELEASE</spring.version>
+        <spring-cloud.version>Camden.SR5</spring-cloud.version>
     </properties>
 
     <dependencyManagement>
