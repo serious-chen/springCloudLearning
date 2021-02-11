@@ -1,2 +1,5 @@
-/Users/serious/IdeaProjects/springCloudLearning/springCloudLearning-web/src/main/java/myPain/AppMain.java
+/Users/serious/IdeaProjects/springCloudLearning/springCloudLearning-web/src/main/java/myPain/config/HystrixConfig.java
+/Users/serious/IdeaProjects/springCloudLearning/springCloudLearning-web/src/main/java/myPain/config/FeignConfig.java
+/Users/serious/IdeaProjects/springCloudLearning/springCloudLearning-web/src/main/java/myPain/config/EurekaClientFeign.java
 /Users/serious/IdeaProjects/springCloudLearning/springCloudLearning-web/src/main/java/myPain/controller/TestController.java
+/Users/serious/IdeaProjects/springCloudLearning/springCloudLearning-web/src/main/java/myPain/AppMain.java

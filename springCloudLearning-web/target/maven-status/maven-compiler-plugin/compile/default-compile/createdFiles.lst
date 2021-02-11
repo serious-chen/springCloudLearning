@@ -1,2 +1,5 @@
 myPain/AppMain.class
+myPain/config/FeignConfig.class
+myPain/config/EurekaClientFeign.class
 myPain/controller/TestController.class
+myPain/config/HystrixConfig.class
