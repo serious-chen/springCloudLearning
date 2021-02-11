@@ -16,7 +16,7 @@
 
     <properties>
         <spring.version>1.4.4.RELEASE</spring.version>
-        <spring-cloud.version>Camden.SR5</spring-cloud.version>
+        <spring-cloud.version>Brixton.SR6</spring-cloud.version>
     </properties>
 
     <dependencyManagement>
