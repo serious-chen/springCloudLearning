@@ -21,6 +21,7 @@ public class TestController {
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
     @ResponseBody
     public String hi(@RequestParam("name") String name){
+        log.info(name);
         return name;
     }
 }

@@ -5,6 +5,12 @@ spring:
   application:
     name: user
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: /actuator/hystrix.stream
+
 eureka:
   instance:
     preferIpAddress: true
@@ -12,4 +18,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://192.168.2.109:8081/eureka, http://192.168.2.112:8081/eureka
+      defaultZone: http://127.0.0.1:8081/eureka

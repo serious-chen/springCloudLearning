@@ -5,6 +5,12 @@ spring:
   application:
     name: web
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: /actuator/hystrix.stream
+
 eureka:
   instance:
     preferIpAddress: true
@@ -18,3 +24,4 @@ feign:
   hystrix:
     #feign客户端调用服务，可以使用feign内置的Hystrix功能
     enabled: true
+

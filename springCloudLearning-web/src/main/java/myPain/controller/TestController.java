@@ -33,9 +33,8 @@ public class TestController {
     public String hello(){
         /*ServiceInstance serviceInstance = loadBalancerClient.choose("user");
         log.info(serviceInstance.getHost());*/
-        ResponseEntity<String> result = restTemplate.getForEntity("http://user/hello", String.class);
-        log.info(result.getBody());
-        eurekaClientFeign.sayHiFromClientEureka("hi");
-        return result.getBody();
+        /*ResponseEntity<String> result = restTemplate.getForEntity("http://user/hello", String.class);
+        log.info(result.getBody());*/
+        return eurekaClientFeign.sayHiFromClientEureka("hi");
     }
 }

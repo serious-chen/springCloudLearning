@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: turbine
+
+server:
+  port: 8086
+
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: web,user
+  clusterNameExpression: new String("default")
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8081/eureka
