@@ -1,0 +1,6 @@
+version: '2'
+services:
+  springCloudLearning:
+    image: serious/springCloudLearning:eureka
+    ports:
+      - "8080:8080"

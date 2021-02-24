@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: web
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 management:
   endpoints:
@@ -24,4 +29,7 @@ feign:
   hystrix:
     #feign客户端调用服务，可以使用feign内置的Hystrix功能
     enabled: true
+
+app:
+  version: v3
 

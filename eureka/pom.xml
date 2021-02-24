@@ -11,6 +11,14 @@
 
     <artifactId>eureka</artifactId>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <start-class>myPain.starter.EurekaMain</start-class>
+        <docker.image.name>serious/springCloudLearning</docker.image.name>
+        <docker.image.tag>eureka</docker.image.tag>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
