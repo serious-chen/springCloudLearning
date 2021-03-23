@@ -19,6 +19,9 @@ public abstract class Sort {
             case MERGE:
                 return SortType.MERGE.getSortBean();
 
+            case QUICK:
+                return SortType.QUICK.getSortBean();
+
             case INSERTION:
             default:
                 return SortType.INSERTION.getSortBean();
