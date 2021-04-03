@@ -1,6 +1,5 @@
 package myPain.easyTestCase;
 
-import org.apache.zookeeper.ZooKeeper;
 
 /**
  * @Description TODO
@@ -9,8 +8,6 @@ import org.apache.zookeeper.ZooKeeper;
 public class Cases {
 
     public static void main(String[] args) throws Exception{
-        ZooKeeper zk = new ZooKeeper("", 3000, null);
-        // 一致性要求高，在调用前可以先执行sync；
-//        zk.sync();
+
     }
 }

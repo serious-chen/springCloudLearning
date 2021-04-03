@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <option name="BUILD_PROCESS_HEAP_SIZE" value="1024" />
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -15,7 +16,7 @@
     <bytecodeTargetLevel target="1.8">
       <module name="eureka" target="1.5" />
       <module name="springCloudLearning" target="1.5" />
-      <module name="springCloudLearning-web" target="1.5" />
+      <module name="springCloudLearning-web" target="8" />
       <module name="user" target="1.5" />
     </bytecodeTargetLevel>
   </component>

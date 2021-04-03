@@ -33,6 +33,6 @@ public abstract class Sort {
 
     public static void main(String[] args) {
         List<Integer> list = Lists.newArrayList(17,5,33,2,46,1,4,55,24, 19,20,38,99,2,37,66,23);
-        System.out.println(getBean(SortType.BUCKET).sort(list));
+        System.out.println(getBean(SortType.COUNTING).sort(list));
     }
 }
