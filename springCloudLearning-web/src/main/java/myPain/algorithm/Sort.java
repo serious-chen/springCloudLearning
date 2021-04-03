@@ -22,6 +22,9 @@ public abstract class Sort {
             case QUICK:
                 return SortType.QUICK.getSortBean();
 
+            case BUCKET:
+                return SortType.BUCKET.getSortBean();
+
             case INSERTION:
             default:
                 return SortType.INSERTION.getSortBean();
@@ -29,7 +32,7 @@ public abstract class Sort {
     }
 
     public static void main(String[] args) {
-        List<Integer> list = Lists.newArrayList(7,5,3,2,6,1,4,5,4);
-        System.out.println(getBean(SortType.MERGE).sort(list));
+        List<Integer> list = Lists.newArrayList(17,5,33,2,46,1,4,55,24, 19,20,38,99,2,37,66,23);
+        System.out.println(getBean(SortType.BUCKET).sort(list));
     }
 }

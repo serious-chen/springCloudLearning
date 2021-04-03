@@ -6,6 +6,7 @@ public enum SortType {
     SELECTION("选择", new SelectionSort()),
     MERGE("归并", new MergeSort()),
     QUICK("快速", new QuickSort()),
+    BUCKET("桶", new BucketSort()),
     ;
 
 
